@@ -5,41 +5,34 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'my-first-app';
   name!: string;
-
-  todoListMain = [
+  items = [
     {
-      name: "Задача 1",
-      date: "2023-12-01",
-      type: "new"
+    name: "Task 1",
+    status: "pending"
     },
     {
-      name: "Задача 2",
-      date: "2023-12-02",
-      type: "inProgress"
+    name: "Task 2",
+    status: "in progress"
     },
     {
-      name: "Задача 3",
-      date: "2023-12-03",
-      type: "done"
+    name: "Task 3",
+    status: "completed"
     },
     {
-      name: "Задача 4",
-      date: "2023-12-04",
-      type: "new"
+    name: "Task 4",
+    status: "pending"
     },
     {
-      name: "Задача 5",
-      date: "2023-12-05",
-      type: "inProgress"
+    name: "Task 5",
+    status: "in progress"
     },
     {
-      name: "Задача 6",
-      date: "2023-12-06",
-      type: "done"
+    name: "Task 6",
+    status: "pending"
     }
-  ];
-
+    ];
 }
